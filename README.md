@@ -1,34 +1,42 @@
-# pizza-bill-generator
-# 🍕 Pizza Bill Generator (Java OOP Project)
+🍕 Pizza Bill Generator (Java OOP Project)
 
-A beginner-friendly Java project that demonstrates **OOP concepts** like  
-Encapsulation, Inheritance, Polymorphism, and Abstraction using a simple  
-Pizza Billing System.
+A beginner-friendly Java project that demonstrates Object-Oriented Programming (OOP) concepts using a simple and real-world Pizza Billing System.
 
----
+🚀 Features
 
-## 🚀 Features
-- Choose pizza type: Veg, Non-Veg, or Deluxe  
-- Add extra cheese  
-- Add extra toppings  
-- Auto-generated detailed bill  
-- Clean OOP structure   
+✔️ Choose pizza type: Veg / Non-Veg / Deluxe
+✔️ Add extra cheese
+✔️ Add extra toppings
+✔️ Add takeaway option
+✔️ Auto-generated detailed bill
+✔️ Clean and modular OOP structure
 
----
+🧩 OOP Concepts Used
+1. Encapsulation
 
-## 🧩 OOP Concepts Used
+All variables (price, toppings, cheese, takeaway) are private.
 
-### 1. Encapsulation
-All pizza properties (price, cheese, toppings) are private, and accessed through methods.
+They are accessed using public methods only.
 
-### 2. Inheritance
-Different types of pizzas extend a common `Pizza` class.
+2. Inheritance
 
-### 3. Polymorphism
-`DeluxePizza` overrides the `generateBill()` method.
+DeluxPizza extends the Pizza class.
 
-### 4. Abstraction
-The parent class hides the common logic of pizza pricing from the user.
+Deluxe pizza automatically includes cheese & toppings.
 
----
+3. Polymorphism
 
+DeluxPizza overrides addExtraCheese() and addExtraToppings()
+to prevent double additions.
+
+4. Abstraction
+
+The base Pizza class handles common billing logic.
+
+User interacts only through simple method calls.
+
+📂 Project Structure
+src/
+│── Pizza.java
+│── DeluxPizza.java
+│── Main.java
